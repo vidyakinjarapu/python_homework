@@ -42,13 +42,13 @@ def data_type_conversion(value, data_type):
 def grade(*args):
     try:
         avg = sum(args) / len(args)
-        if avg > 90:
+        if avg >= 90:
             return "A"
-        elif avg > 80:
+        elif avg >= 80:
             return "B"
-        elif avg > 70:
+        elif avg >= 70:
             return "C"
-        elif avg > 60:
+        elif avg >= 60:
             return "D"
         else:
             return "F"
