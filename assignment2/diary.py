@@ -8,9 +8,9 @@ try:
         f.write(user_input + '\n')
         while True:
             user_input = input("What else? \n")
+            f.write(user_input + '\n')
             if user_input == "done for now":
                 break
-            f.write(user_input + '\n')
 except Exception as e:
    trace_back = traceback.extract_tb(e.__traceback__)
    stack_trace = list()
