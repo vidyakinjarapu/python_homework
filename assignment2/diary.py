@@ -4,10 +4,10 @@ try:
     with open('diary.txt', "a") as f:
         print("Please Enter some text. If you are done, please enter 'done for now'")
         
-        user_input = input("What happened today? \n")
+        user_input = input("What happened today?")
         f.write(user_input + '\n')
         while True:
-            user_input = input("What else? \n")
+            user_input = input("What else?")
             f.write(user_input + '\n')
             if user_input == "done for now":
                 break
