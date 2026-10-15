@@ -145,7 +145,7 @@ minutes_list = create_minutes_list()
 # ---------------------------------- Task 15 ----------------------------
 def write_sorted_list():
     minutes_list.sort(key=lambda x: x[1])
-    sorted_time_list = tuple(map(lambda x: (x[0], datetime.strftime(x[1], "%B %d, %Y")), minutes_list))
+    sorted_time_list = list(map(lambda x: (x[0], datetime.strftime(x[1], "%B %d, %Y")), minutes_list))
     with open("./minutes.csv", "w", newline='') as f:
         writer = csv.writer(f)
         writer.writerow(minutes1["fields"]) # header first row
