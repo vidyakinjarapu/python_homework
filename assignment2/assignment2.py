@@ -67,7 +67,7 @@ def employee_dict(row):
     return res_dict
 # print(employee_dict(['10', 'Kelli', 'Bowman', '+379 (843)240-1818x77648'])) 
 
-print("Emp_id_col: ", employee_id_column)
+# print("Emp_id_col: ", employee_id_column)
 
 
 # -------------------------------- Task 9 ---------------------------------
@@ -84,14 +84,14 @@ def all_employees_dict():
 import os
 def get_this_value():
     return os.getenv("THISVALUE")
-print(get_this_value())
+# print(get_this_value())
 
 #-------------------------------------- Task 11 ---------------------------------
 import custom_module
 def set_that_secret(new_secret):
     custom_module.set_secret(new_secret)
 set_that_secret("batman")
-print(custom_module.secret)
+# print(custom_module.secret)
 
 # ------------------------------------- Task 12 ---------------------------------
 from pprint import pprint
@@ -153,4 +153,4 @@ def write_sorted_list():
     return sorted_time_list   
 
 
-pprint(write_sorted_list())
+# pprint(write_sorted_list())
