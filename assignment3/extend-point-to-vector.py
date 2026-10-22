@@ -6,7 +6,7 @@ class Point():
     def equality(self, other):
         return self.x == other.x and self.y == other.y
     def string_representation(self):
-        return f"coordinatesnof Point are {self.x}, {self.y}"
+        return f"coordinates of Point are {self.x}, {self.y}"
     def Euclidian_distance(self, other):
         return math.sqrt((self.x - other.x)**2 + (self.y - other.y)**2)
 
@@ -19,7 +19,7 @@ class Vector(Point):
          new_y = self.y + other.y
          return Vector(new_x, new_y)
     
-    def string_representation(self):
+    def __str__(self):
             return f"coordinates of vector are {self.x}, {self.y}"
 
 

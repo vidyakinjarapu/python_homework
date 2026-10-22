@@ -32,12 +32,12 @@ def greet(name = "Vidya"):
     return f"Hello, {name}"
 
 @logger_decorator
-def describe(item, *, color):
+def describe(item, color):
     return f"{item} is {color}"
 
 @logger_decorator
 def greet2():
-    return "Hello only!"
+    return ""
 
 
 add(2, 3)
