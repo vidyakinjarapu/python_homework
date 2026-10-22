@@ -10,23 +10,7 @@ emploee_names = [employee_list[i][1] + " " + employee_list[i][2] for i in range(
 print(emploee_names)
 
 fullname_list = [name.split(" ")[0] for name in emploee_names]
-final_list = []
-for name in fullname_list:
-    if "e" in name:
-        final_list.append(name)
-    else:
-        continue
+
+final_list = [name for name in fullname_list if "e" in name]
 
 print(final_list)
-
-
-'''
-employee_names = []
-for i in range(1, len(employee_list)):
-    employee_names.append(employee_list[i][1] + " " + employee_list[i][2])
-print(employee_names)
-
-
-[['employee_id', 'first_name', 'last_name', 'phone'],
-  ['1', 'Cindy', 'Wade', '+222 656-486-3727']]
-'''
