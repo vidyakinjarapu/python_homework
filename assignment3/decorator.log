@@ -1,0 +1,20 @@
+function: add
+positional parameters: [2, 3]
+keyword parameters: None
+return: 5
+
+function: greet
+positional parameters: ['CTD']
+keyword parameters: None
+return: Hello, CTD
+
+function: describe
+positional parameters: ['sky']
+keyword parameters: ['sky']
+return: sky is blue
+
+function: greet2
+positional parameters: None
+keyword parameters: None
+return: Hello only!
+
