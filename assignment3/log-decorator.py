@@ -19,7 +19,7 @@ def logger_decorator(func):
             f"return: {result}\n"
         )
         logger.log(logging.INFO, record)
-        print(result)
+        # print(result)
         return result
     return wrapper
 
