@@ -31,8 +31,11 @@ v2 = Vector(5, 6)
 
 print(p1 == p2)
 print(str(p1))
+print(str(p2))
+
 distance = p1.Euclidian_distance(p2)
 print("Euclidian distance is : ", distance)
 
+print(str(v1))
 v3 = v1 + v2
 print(str(v3))
