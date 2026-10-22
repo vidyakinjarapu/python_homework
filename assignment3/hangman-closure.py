@@ -7,6 +7,7 @@ def make_hangman(secret_word):
         shown = "".join([letter if letter in guesses else '_' for letter in secret_word])
         print(shown)
 
+        print(all(letter in guesses for letter in secret_word))
         return all(letter in guesses for letter in secret_word)
     
     return hangman_closure
