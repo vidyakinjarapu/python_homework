@@ -3,9 +3,9 @@ class Point():
     def __init__(self, x, y):
         self.x = x
         self.y = y
-    def equality(self, other):
+    def __eq__(self, other):
         return self.x == other.x and self.y == other.y
-    def string_representation(self):
+    def __str__(self):
         return f"coordinates of Point are {self.x}, {self.y}"
     def Euclidian_distance(self, other):
         return math.sqrt((self.x - other.x)**2 + (self.y - other.y)**2)
@@ -29,10 +29,10 @@ v1 = Vector(3, 4)
 v2 = Vector(5, 6)
 
 
-print(p1.equality(p2))
-print(p1.string_representation())
+print(p1 == p2)
+print(str(p1))
 distance = p1.Euclidian_distance(p2)
 print("Euclidian distance is : ", distance)
 
 v3 = v1 + v2
-print(v3.str())
+print(str(v3))
