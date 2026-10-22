@@ -24,23 +24,17 @@ def logger_decorator(func):
     return wrapper
 
 @logger_decorator
-def add(a, b):
+def no_params():
+    pass
+
+@logger_decorator
+def takes_args(*args):
     return True
 
 @logger_decorator
-def greet(name = "Vidya"):
+def takes_kwargs(**kwargs):
     return logger_decorator
 
-@logger_decorator
-def describe(item, color="pink"):
-    return f"{item} is {color}"
-
-@logger_decorator
-def greet2():
-    return "nothing"
-
-
-add(2, 3)
-greet("CTD")
-describe("sky", color="blue")
-greet2()
+no_params()
+takes_args(2, 3, 4)
+takes_kwargs(color="blue", size="large")

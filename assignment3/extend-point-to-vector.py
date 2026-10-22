@@ -35,4 +35,4 @@ distance = p1.Euclidian_distance(p2)
 print("Euclidian distance is : ", distance)
 
 v3 = v1 + v2
-print(v3.string_representation())
+print(v3.str())

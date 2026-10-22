@@ -11,6 +11,6 @@ print(emploee_names)
 
 fullname_list = [name.split(" ")[0] for name in emploee_names]
 
-final_list = [name for name in fullname_list if "e" in name]
+final_list = [name for name in emploee_names if "e" in name]
 
 print(final_list)
