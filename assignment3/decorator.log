@@ -38,3 +38,23 @@ positional parameters: None
 keyword parameters: None
 return: 
 
+function: add
+positional parameters: [2, 3]
+keyword parameters: none
+return: True
+
+function: greet
+positional parameters: ['CTD']
+keyword parameters: none
+return: <function logger_decorator at 0x7fb3e80634c0>
+
+function: describe
+positional parameters: ['sky']
+keyword parameters: {'color': 'blue'}
+return: sky is blue
+
+function: greet2
+positional parameters: None
+keyword parameters: none
+return: nothing
+

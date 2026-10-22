@@ -10,7 +10,7 @@ def logger_decorator(func):
         result = func(*args, **kwargs)
 
         positional = list(args) if args else None
-        keyword = list(args) if kwargs else None
+        keyword = dict(kwargs) if kwargs else "none"
 
         record = (
             f"function: {func.__name__}\n"
@@ -25,19 +25,19 @@ def logger_decorator(func):
 
 @logger_decorator
 def add(a, b):
-    return a + b
+    return True
 
 @logger_decorator
 def greet(name = "Vidya"):
-    return f"Hello, {name}"
+    return logger_decorator
 
 @logger_decorator
-def describe(item, color):
+def describe(item, color="pink"):
     return f"{item} is {color}"
 
 @logger_decorator
 def greet2():
-    return ""
+    return "nothing"
 
 
 add(2, 3)
