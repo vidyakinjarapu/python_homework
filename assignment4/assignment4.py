@@ -88,7 +88,7 @@ clean_data['Age'] =  pd.to_numeric(clean_data['Age'], errors='coerce')
 print("after_age: \n", clean_data)
 
 # Convert Salary
-clean_data["Salary"] = clean_data["Salary"].replace("NaN", pd.NA)
+clean_data["Salary"] = clean_data["Salary"].replace(['unknown', 'n/a'], pd.NA)
 clean_data['Salary'] =  pd.to_numeric(clean_data['Salary'], errors='coerce')
 print("after_age: \n", clean_data)
 
