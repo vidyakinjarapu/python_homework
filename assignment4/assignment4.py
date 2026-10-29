@@ -93,7 +93,7 @@ clean_data['Salary'] =  pd.to_numeric(clean_data['Salary'], errors='coerce')
 print("after_age: \n", clean_data)
 
 # Fill the missing values of salary
-mean_score = clean_data['Age'].median()  # ignoring NaNs
+mean_score = clean_data['Age'].mean()  # ignoring NaNs
 clean_data['Age'] = clean_data['Age'].fillna(mean_score)
 
 median_score = clean_data['Salary'].median()  # ignoring NaNs
